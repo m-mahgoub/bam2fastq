@@ -1,0 +1,86 @@
+Mar-02 14:21:17.247 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -profile docker
+Mar-02 14:21:17.316 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 22.10.4
+Mar-02 14:21:17.336 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/mohamedmahgoub/.nextflow/plugins; core-plugins: nf-amazon@1.11.2,nf-azure@0.14.2,nf-codecommit@0.1.2,nf-console@1.0.4,nf-ga4gh@1.0.4,nf-google@1.4.5,nf-tower@1.5.6,nf-wave@0.5.2
+Mar-02 14:21:17.346 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Mar-02 14:21:17.347 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Mar-02 14:21:17.350 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Mar-02 14:21:17.359 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Mar-02 14:21:17.375 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/mohamedmahgoub/Documents/github/bam2fastq/nextflow.config
+Mar-02 14:21:17.375 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/mohamedmahgoub/Documents/github/bam2fastq/nextflow.config
+Mar-02 14:21:17.403 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker`
+Mar-02 14:21:17.831 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [standard, slurm, conda, singularity, docker]
+Mar-02 14:21:17.866 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Mar-02 14:21:17.882 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [hungry_stone] DSL2 - revision: bbd9fd05ee
+Mar-02 14:21:17.883 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Mar-02 14:21:17.883 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Mar-02 14:21:17.892 [main] DEBUG nextflow.secret.LocalSecretsProvider - Secrets store: /Users/mohamedmahgoub/.nextflow/secrets/store.json
+Mar-02 14:21:17.896 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@411c6d44] - activable => nextflow.secret.LocalSecretsProvider@411c6d44
+Mar-02 14:21:17.947 [main] DEBUG nextflow.Session - Session UUID: 08c2a397-6c66-4de2-b9e2-37f906cc635d
+Mar-02 14:21:17.948 [main] DEBUG nextflow.Session - Run name: hungry_stone
+Mar-02 14:21:17.948 [main] DEBUG nextflow.Session - Executor pool size: 12
+Mar-02 14:21:17.958 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar-02 14:21:17.978 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 22.10.4 build 5836
+  Created: 09-12-2022 09:58 UTC (03:58 CDT)
+  System: Mac OS X 12.5.1
+  Runtime: Groovy 3.0.13 on Java HotSpot(TM) 64-Bit Server VM 18.0.2.1+1-1
+  Encoding: UTF-8 (UTF-8)
+  Process: 33745@3071-AL-05009 [10.11.1.129]
+  CPUs: 12 - Mem: 16 GB (140.4 MB) - Swap: 4 GB (784.8 MB)
+Mar-02 14:21:17.991 [main] DEBUG nextflow.Session - Work-dir: /Users/mohamedmahgoub/Documents/github/bam2fastq/work [Mac OS X]
+Mar-02 14:21:17.991 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/mohamedmahgoub/Documents/github/bam2fastq/bin
+Mar-02 14:21:18.002 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar-02 14:21:18.011 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-02 14:21:18.034 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-02 14:21:18.044 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 13; maxThreads: 1000
+Mar-02 14:21:18.106 [main] DEBUG nextflow.Session - Session start
+Mar-02 14:21:18.398 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Mar-02 14:21:18.786 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-02 14:21:18.786 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-02 14:21:18.792 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Mar-02 14:21:18.797 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=12; memory=16 GB; capacity=12; pollInterval=100ms; dumpInterval=5m
+Mar-02 14:21:18.885 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-02 14:21:18.885 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-02 14:21:18.894 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: SAMTOFASTQ, index:SAMTOOLS_INDEX, SAMTOOLS_INDEX
+Mar-02 14:21:18.894 [main] DEBUG nextflow.Session - Igniting dataflow network (3)
+Mar-02 14:21:18.901 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > index:SAMTOOLS_INDEX
+Mar-02 14:21:18.902 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SAMTOFASTQ
+Mar-02 14:21:18.902 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Mar-02 14:21:18.902 [main] DEBUG nextflow.Session - Session await
+Mar-02 14:21:21.006 [FileTransfer-1] DEBUG nextflow.file.FilePorter - Copying foreign file https://github.com/m-mahgoub/bam2fastq/blob/881d990b78e49a8972081608a5623c4db4876ae8/data/SPT5_T0_rep1.sorted.bam to work dir: /Users/mohamedmahgoub/Documents/github/bam2fastq/work/stage/dd/235290f14d00a70e99b337cd715ca9/SPT5_T0_rep1.sorted.bam
+Mar-02 14:21:21.662 [Task submitter] DEBUG nextflow.processor.TaskRun - Unable to dump error of process 'index:SAMTOOLS_INDEX (test)' -- Cause: java.nio.file.NoSuchFileException: /Users/mohamedmahgoub/Documents/github/bam2fastq/work/6a/53a38b127aa1a891800196d00e7735/.command.log
+Mar-02 14:21:21.663 [Task submitter] ERROR nextflow.processor.TaskProcessor - Error executing process > 'index:SAMTOOLS_INDEX (test)'
+
+Caused by:
+  Process requirement exceeds available memory -- req: 64 GB; avail: 16 GB
+
+Command executed:
+
+  samtools \
+      index \
+      -@ 7 \
+      SPT5_T0_rep1.sorted.bam
+
+Command exit status:
+  -
+
+Command output:
+  (empty)
+
+Work dir:
+  /Users/mohamedmahgoub/Documents/github/bam2fastq/work/6a/53a38b127aa1a891800196d00e7735
+
+Tip: you can try to figure out what's wrong by changing to the process work dir and showing the script file named `.command.sh`
+Mar-02 14:21:21.667 [Task submitter] DEBUG nextflow.Session - Session aborted -- Cause: Process requirement exceeds available memory -- req: 64 GB; avail: 16 GB
+Mar-02 14:21:21.679 [Task submitter] DEBUG nextflow.Session - The following nodes are still active:
+[process] SAMTOFASTQ
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: fasta
+  port 2: (cntrl) -     ; channel: $
+
+Mar-02 14:21:21.681 [main] DEBUG nextflow.Session - Session await > all processes finished
+Mar-02 14:21:21.681 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Mar-02 14:21:21.686 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=1; submittedCount=0; runningCount=-1; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=-8; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Mar-02 14:21:21.914 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Mar-02 14:21:21.929 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

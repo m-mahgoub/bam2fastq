@@ -1,0 +1,3 @@
+2023-03-02 14:19:39	-	drunk_edison	-	bbd9fd05eeb8d94773370533034a46ef	078d7ff7-20c9-484d-905c-ae38c79c19d2	nextflow run main.nf --input samplesheet.csv -profile docker
+2023-03-02 14:20:50	4s	elegant_torvalds	ERR	bbd9fd05eeb8d94773370533034a46ef	087edd80-c4d3-4ee5-afc3-d16bb508c908	nextflow run main.nf --input samplesheet.csv -profile docker
+2023-03-02 14:21:17	4.9s	hungry_stone	ERR	bbd9fd05eeb8d94773370533034a46ef	08c2a397-6c66-4de2-b9e2-37f906cc635d	nextflow run main.nf -profile docker

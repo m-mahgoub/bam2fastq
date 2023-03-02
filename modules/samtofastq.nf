@@ -4,7 +4,7 @@ process SAMTOFASTQ {
         'https://depot.galaxyproject.org/singularity/gatk4:4.3.0.0--py36hdfd78af_0':
         'quay.io/biocontainers/gatk4:4.3.0.0--py36hdfd78af_0' }"
     
-    publishDir "$params.outdir/fastq", mode:'copy', pattern: '*.fastq.gz'
+    publishDir "$params.outdir/${meta.id}", mode:'copy', pattern: '*.fastq.gz'
     cpus 8
     memory '64 GB'
 

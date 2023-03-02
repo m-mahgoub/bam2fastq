@@ -36,9 +36,4 @@ workflow {
         ch_indexed_bam,
         file(params.fasta)
     )
-
-    emit: ch_indexed_bam.view()
-
-
-    // ch_bam.view()
 }

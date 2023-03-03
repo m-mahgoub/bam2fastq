@@ -5,8 +5,8 @@ process SAMTOFASTQ {
         'quay.io/biocontainers/gatk4:4.3.0.0--py36hdfd78af_0' }"
     
     publishDir "$params.outdir/${meta.id}", mode:'copy', pattern: '*.fastq.gz'
-    cpus 8
-    memory '64 GB'
+    cpus 2
+    memory '12 GB'
 
     input:
     tuple val(meta), path(bam), path(bam_index)

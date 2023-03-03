@@ -5,8 +5,8 @@ process SAMTOOLS_INDEX {
         'https://depot.galaxyproject.org/singularity/samtools:1.16.1--h6899075_1' :
         'quay.io/biocontainers/samtools:1.16.1--h6899075_1' }"
     
-    cpus 8
-    memory '64 GB'
+    cpus 2
+    memory '12 GB'
     input:
     tuple val(meta), path(input)
 
